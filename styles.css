@@ -1,0 +1,122 @@
+/* import local font file */
+@font-face {
+  font-family: 'Neue';
+  src: url('./neue.otf') format('opentype');
+}
+
+/* apply font to all elements */
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: 'Neue', sans-serif ;
+}
+
+
+* {
+    color: white;
+}
+
+
+.logo-navbar {
+    background-image: url("./assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160px;
+    filter: invert(1);
+    width: 190px;
+    height: 50px;
+}
+
+.btn-cta {
+    background-color: #08ffc5 !important;
+    border-radius: 40px;
+    font-weight: 900;
+    width: 200px;
+}
+
+.text-blue {
+    color: #1623ff;
+}
+
+.bg-blue {
+    background-color: #1623ff;
+}
+
+.text-cyan {
+    color: #08ffc5;
+}
+.bg-cyan {
+    background-color: #08ffc5;
+}
+
+.border-cyan {
+    border-color: #08ffc5;
+}
+
+
+.blue-circle {
+    background-color: #1623ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .responsive-black-border {
+        border-right: 4px solid black;
+    }   
+}
+
+.border-input {
+    border: 0px solid transparent !important;
+    border-bottom: 2px solid black !important;
+    border-radius: 0px !important;
+}
+
+
+
+/* header */
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(black 20%, rgba(0,0,0,0.4), black) !important;
+    
+    z-index: 1;
+  }
+  
+  
